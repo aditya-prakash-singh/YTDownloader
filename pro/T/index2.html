@@ -1,0 +1,22 @@
+<body style="padding: 5% 20% 0px 20%;">
+<form action="gogo" method="post">
+
+	{% csrf_token %}
+
+	<h3>
+	Enter the URL Here&nbsp<input type="text" name="ur" size="60px" autocomplete="off"></h3>
+<br>
+	<input type="radio" id="vid" name="type" value="vid">
+	<label for="vid">Video</label>
+	<input type="radio" id="aud" name="type" value="aud">
+	<label for="aud">Audio</label><br><br>
+
+	<button type="submit" style="padding: 20px;color: blue;font-size: 20px;text-align: center;">Download</button>
+	<br>
+	<br>
+	<br>
+	<img src="{{thum}}" alt="Your Thumbnail"  width="200px">
+	
+</form>
+<a href="{{pppp}}" target="_blank">Download</a>
+</body>
